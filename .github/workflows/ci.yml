@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  LANGUAGES: en ru
+  LANGUAGES: ru en es ja ko zh
   MDBOOK_VERSION: 0.5.1
 
 jobs:
