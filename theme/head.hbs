@@ -4,20 +4,22 @@
         const mdbookPathToRoot = "{{ path_to_root }}";
         const rightButtonsElement = document.querySelector('.right-buttons');
         rightButtonsElement.insertAdjacentHTML("afterbegin", `
-            <button id="language-toggle" class="icon-button" type="button"
-                    title="Change language" aria-label="Change language"
-                    aria-haspopup="true" aria-expanded="false"
-                    aria-controls="language-list">
-                {{fa "solid" "globe"}}
-            </button>
-            <ul id="language-list" class="theme-popup" aria-label="Languages" role="menu">
-              <li role="none"><button role="menuitem" class="theme">
-                  <a id="en">English</a>
-              </button></li>
-              <li role="none"><button role="menuitem" class="theme">
-                  <a id="ru">Русский</a>
-              </button></li>
-            </ul>
+            <div style="position: relative; display: inline-flex;">
+                <button id="language-toggle" class="icon-button" type="button"
+                        title="Change language" aria-label="Change language"
+                        aria-haspopup="true" aria-expanded="false"
+                        aria-controls="language-list">
+                    {{fa "solid" "globe"}}
+                </button>
+                <ul id="language-list" class="theme-popup" aria-label="Languages" role="menu">
+                  <li role="none"><button role="menuitem" class="theme">
+                      <a id="ru">Русский</a>
+                  </button></li>
+                  <li role="none"><button role="menuitem" class="theme">
+                      <a id="en">English</a>
+                  </button></li>
+                </ul>
+            </div>
         `);
 
         const language = document.documentElement.getAttribute("lang");
@@ -34,12 +36,12 @@
 
         // The path to the root, taking the current language into account.
         let full_path_to_root =
-            language == "en" ? `${mdbookPathToRoot}` : `${mdbookPathToRoot}../`;
+            language == "ru" ? `${mdbookPathToRoot}` : `${mdbookPathToRoot}../`;
         // The page path (mdbook only gives us access to the path to the Markdown file).
         let path = mdbookPath.replace(/\.md$/, ".html");
         const langAnchors = Array.from(langList.querySelectorAll("a"));
         for (let lang of langAnchors) {
-            if (lang.id == "en") {
+            if (lang.id == "ru") {
                 lang.href = `${full_path_to_root}${path}`;
             } else {
                 lang.href = `${full_path_to_root}${lang.id}/${path}`;
