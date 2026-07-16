@@ -9,7 +9,7 @@ description = "Mikhail Semyonovich Tsvet the founder of chromatography"
 
 [output.html]
 additional-css = ["theme/css/language-picker.css"]
-git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography"
+git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography/"
 
 # EPUB
 # [output.epub]
