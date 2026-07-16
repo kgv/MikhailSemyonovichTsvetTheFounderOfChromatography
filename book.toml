@@ -1,0 +1,37 @@
+[book]
+title = "Mikhail Semyonovich Tsvet the founder of chromatography"
+authors = ["Giorgi Vladimirovich Kazakov", "Roman Alexandrovich Sidorov"]
+description = "Mikhail Semyonovich Tsvet the founder of chromatography"
+
+[output.html]
+additional-css = ["theme/css/custom.css"]
+additional-js = ["theme/js/custom.js"]
+git-repository-url = "https://github.com/ippras/MikhailSemyonovichTsvetTheFounderOfChromatography.book"
+
+# EPUB
+# [output.epub]
+# additional-css = ["theme/css/custom.css"]
+# additional-js = ["theme/js/custom.js"]
+
+# PDF
+# [output.pdf]
+
+# [output.pandoc]
+
+# DOCX
+# [output.pandoc.profile.docx]
+# output-file = "output.docx"
+
+# LATEX
+# [output.pandoc.profile.latex]
+# extract-media = "media"
+# output-file = "output.tex"
+# [output.pandoc.profile.latex.variables]
+# header-includes = [
+#     # "\\raggedright" # Выровнять текст по левому краю
+#     "\\sloppy", # "Разрешаю делать пробелы между словами какими угодно большими, главное — не вылезай за правый край страницы"
+#     "\\usepackage[none]{hyphenat}",
+#     "\\usepackage{alphabeta}",
+# ]
+# lang = "ru-RU"
+# mainfont = "Liberation Serif"
