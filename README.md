@@ -18,6 +18,10 @@ MDBOOK_OUTPUT='{"xgettext": {"depth": 3}}' \
 
 ```sh
 msginit -i po/messages.pot -l en -o po/en.po --no-translator
+msginit -i po/messages.pot -l es -o po/es.po --no-translator
+msginit -i po/messages.pot -l ja -o po/ja.po --no-translator
+msginit -i po/messages.pot -l ko -o po/ko.po --no-translator
+msginit -i po/messages.pot -l zh -o po/zh.po --no-translator
 ```
 
 ```sh
@@ -30,10 +34,18 @@ kgv@users.noreply.github.com
 
 ```
 msgmerge --update po/en.po po/messages.pot
+msgmerge --update po/es.po po/messages.pot
+msgmerge --update po/ja.po po/messages.pot
+msgmerge --update po/ko.po po/messages.pot
+msgmerge --update po/zh.po po/messages.pot
 ```
 
 ```
 msgcat --no-wrap po/en.po -o po/en.po
+msgcat --no-wrap po/es.po -o po/es.po
+msgcat --no-wrap po/ja.po -o po/ja.po
+msgcat --no-wrap po/ko.po -o po/ko.po
+msgcat --no-wrap po/zh.po -o po/zh.po
 ```
 
 ```
@@ -49,10 +61,12 @@ msgfmt --statistics po/en.po
 `[output.markdown]`
 
 ```
-echo "Building ru translation (root)"
 MDBOOK_BOOK__LANGUAGE=ru mdbook build -d book
-echo "Building en translation (/en/)"
 MDBOOK_BOOK__LANGUAGE=en mdbook build -d book/en
+MDBOOK_BOOK__LANGUAGE=es mdbook build -d book/es
+MDBOOK_BOOK__LANGUAGE=ja mdbook build -d book/ja
+MDBOOK_BOOK__LANGUAGE=ko mdbook build -d book/ko
+MDBOOK_BOOK__LANGUAGE=zh mdbook build -d book/zh
 ```
 
 ```sh
