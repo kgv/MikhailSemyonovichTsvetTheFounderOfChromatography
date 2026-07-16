@@ -6,13 +6,14 @@ authors = [
     "Roman Alexandrovich Sidorov (Editor)",
 ]
 description = "Mikhail Semyonovich Tsvet the founder of chromatography"
-language= "ru"
+language = "ru"
 
 [output.html]
 additional-css = ["theme/css/language-picker.css"]
 git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography/"
 
 [output.html.search]
+enable = true
 use-boolean-and = true
 
 [build]
