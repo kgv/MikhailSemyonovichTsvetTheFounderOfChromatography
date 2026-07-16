@@ -99,3 +99,25 @@ MDBOOK_BOOK__LANGUAGE=en mdbook serve
 `[^!]\[[^^\]]+\]`
 
 `{{#include Родословная.md}}`
+
+
+### pandoc latex
+
+```wsl
+sudo apt install texlive-xetex texlive-fonts-recommended texlive-latex-extra texlive-lang-cyrillic
+```
+
+```
+tlmgr texlive-lang-cyrillic texlive-lang-russian
+tlmgr install babel-russian hyphen-russian cyrillic
+```
+
+
+Преобразуй в markdown как у меня теперь
+"Загадки природы хлорофилла in vitro"
+страницы с 229 по 242
+
+Преобразуй в markdown как у меня теперь
+"Загадки природы хлорофилла in vitro"
+страницы с 229 по 242
+

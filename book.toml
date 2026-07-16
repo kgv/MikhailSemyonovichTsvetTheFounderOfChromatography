@@ -1,38 +1,45 @@
 [book]
 title = "Mikhail Semyonovich Tsvet the founder of chromatography"
-authors = ["Giorgi Vladimirovich Kazakov", "Roman Alexandrovich Sidorov"]
+authors = [
+    "Evgenia Mikhailovna Senchenkova (Author)",
+    "Giorgi Vladimirovich Kazakov (Editor)",
+    "Roman Alexandrovich Sidorov (Editor)",
+]
 description = "Mikhail Semyonovich Tsvet the founder of chromatography"
 
 [output.html]
-additional-css = [
-  "theme/css/language-picker.css",
-]
+additional-css = ["theme/css/language-picker.css"]
 git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography"
 
 # EPUB
 # [output.epub]
-# additional-css = ["theme/css/custom.css"]
-# additional-js = ["theme/js/custom.js"]
 
 # PDF
 # [output.pdf]
 
-# [output.pandoc]
+[output.pandoc]
 
 # DOCX
 # [output.pandoc.profile.docx]
 # output-file = "output.docx"
 
 # LATEX
-# [output.pandoc.profile.latex]
-# extract-media = "media"
-# output-file = "output.tex"
-# [output.pandoc.profile.latex.variables]
-# header-includes = [
-#     # "\\raggedright" # Выровнять текст по левому краю
-#     "\\sloppy", # "Разрешаю делать пробелы между словами какими угодно большими, главное — не вылезай за правый край страницы"
-#     "\\usepackage[none]{hyphenat}",
-#     "\\usepackage{alphabeta}",
-# ]
-# lang = "ru-RU"
-# mainfont = "Liberation Serif"
+[output.pandoc.profile.latex]
+# extract-media = "book/pandoc/latex/media"
+output-file = "output.tex"
+pdf-engine = "xelatex"
+
+[output.pandoc.profile.latex.variables]
+fontenc = "T2A"
+lang = "ru-RU"
+mainfont = "Liberation Serif"
+header-includes = [
+    # "\\raggedright" # Выровнять текст по левому краю
+    "\\sloppy", # "Разрешаю делать пробелы между словами какими угодно большими, главное — не вылезай за правый край страницы"
+    "\\usepackage[none]{hyphenat}",
+    "\\usepackage{alphabeta}",
+    "\\usepackage{lineno}", # For line numbering
+    "\\linenumbers",
+    "\\usepackage{grffile}", # точки в именах файлов
+    "\\graphicspath{{../../../}}", # исправление путей
+]
