@@ -122,4 +122,4 @@ tlmgr install babel-russian hyphen-russian cyrillic
 
 Преобразуй в markdown как у меня теперь
 "Хроматографический адсорбционный анализ"
-страницы с 255 по 
+страницы с 255 по 288
