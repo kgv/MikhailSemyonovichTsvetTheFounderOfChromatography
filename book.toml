@@ -17,29 +17,28 @@ git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOf
 # PDF
 # [output.pdf]
 
-[output.pandoc]
+# [output.pandoc]
 
 # DOCX
 # [output.pandoc.profile.docx]
 # output-file = "output.docx"
 
 # LATEX
-[output.pandoc.profile.latex]
-# extract-media = "book/pandoc/latex/media"
-output-file = "output.tex"
-pdf-engine = "xelatex"
+# [output.pandoc.profile.latex]
+# output-file = "output.tex"
+# pdf-engine = "xelatex"
 
-[output.pandoc.profile.latex.variables]
-fontenc = "T2A"
-lang = "ru-RU"
-mainfont = "Liberation Serif"
-header-includes = [
-    # "\\raggedright" # Выровнять текст по левому краю
-    "\\sloppy", # "Разрешаю делать пробелы между словами какими угодно большими, главное — не вылезай за правый край страницы"
-    "\\usepackage[none]{hyphenat}",
-    "\\usepackage{alphabeta}",
-    "\\usepackage{lineno}", # For line numbering
-    "\\linenumbers",
-    "\\usepackage{grffile}", # точки в именах файлов
-    "\\graphicspath{{../../../}}", # исправление путей
-]
+# [output.pandoc.profile.latex.variables]
+# fontenc = "T2A"
+# lang = "ru-RU"
+# mainfont = "Liberation Serif"
+# header-includes = [
+#     # "\\raggedright" # Выровнять текст по левому краю
+#     "\\sloppy", # "Разрешаю делать пробелы между словами какими угодно большими, главное — не вылезай за правый край страницы"
+#     "\\usepackage[none]{hyphenat}",
+#     "\\usepackage{alphabeta}",
+#     "\\usepackage{lineno}", # For line numbering
+#     "\\linenumbers",
+#     "\\usepackage{grffile}", # точки в именах файлов
+#     "\\graphicspath{{../../../}}", # исправление путей
+# ]
