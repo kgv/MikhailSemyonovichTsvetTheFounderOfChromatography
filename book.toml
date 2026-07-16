@@ -4,8 +4,9 @@ authors = ["Giorgi Vladimirovich Kazakov", "Roman Alexandrovich Sidorov"]
 description = "Mikhail Semyonovich Tsvet the founder of chromatography"
 
 [output.html]
-additional-css = ["theme/css/custom.css"]
-additional-js = ["theme/js/custom.js"]
+additional-css = [
+  "theme/css/language-picker.css",
+]
 git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography.book"
 
 # EPUB

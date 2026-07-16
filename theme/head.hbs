@@ -4,22 +4,32 @@
         const mdbookPathToRoot = "{{ path_to_root }}";
         const rightButtonsElement = document.querySelector('.right-buttons');
         rightButtonsElement.insertAdjacentHTML("afterbegin", `
-            <div style="position: relative; display: inline-flex;">
-                <button id="language-toggle" class="icon-button" type="button"
-                        title="Change language" aria-label="Change language"
-                        aria-haspopup="true" aria-expanded="false"
-                        aria-controls="language-list">
-                    {{fa "solid" "globe"}}
-                </button>
-                <ul id="language-list" class="theme-popup" aria-label="Languages" role="menu">
-                  <li role="none"><button role="menuitem" class="theme">
-                      <a id="ru">Русский</a>
-                  </button></li>
-                  <li role="none"><button role="menuitem" class="theme">
-                      <a id="en">English</a>
-                  </button></li>
-                </ul>
-            </div>
+            <button id="language-toggle" class="icon-button" type="button"
+                    title="Change language" aria-label="Change language"
+                    aria-haspopup="true" aria-expanded="false"
+                    aria-controls="language-list">
+                {{fa "solid" "globe"}}
+            </button>
+            <ul id="language-list" class="theme-popup" aria-label="Languages" role="menu">
+              <li role="none"><button role="menuitem" class="theme">
+                  <a id="ru">Русский</a>
+              </button></li>
+              <li role="none"><button role="menuitem" class="theme">
+                  <a id="en">English</a>
+              </button></li>
+              <li role="none"><button role="menuitem" class="theme">
+                  <a id="ja">日本語</a>
+              </button></li>
+              <li role="none"><button role="menuitem" class="theme">
+                  <a id="zh">中文</a>
+              </button></li>
+              <li role="none"><button role="menuitem" class="theme">
+                  <a id="es">Español</a>
+              </button></li>
+              <li role="none"><button role="menuitem" class="theme">
+                  <a id="ko">한국어</a>
+              </button></li>
+            </ul>
         `);
 
         const language = document.documentElement.getAttribute("lang");

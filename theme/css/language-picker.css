@@ -1,23 +1,13 @@
 #language-list {
-  /* Сбрасываем стандартные отступы mdbook */
-  right: auto;
-  
-  /* Сдвигаем меню ровно по центру кнопки */
-  left: 50%;
-  transform: translateX(-50%);
-  
-  /* Опускаем меню ровно под кнопку с небольшим зазором */
-  top: 100%;
-  margin-top: 5px; 
+  left: auto;
+  right: 10px;
 }
 
 [dir="rtl"] #language-list {
-  left: 50%;
+  left: 10px;
   right: auto;
 }
 
 #language-list a {
   color: inherit;
-  display: block; /* Чтобы кликалась вся строка, а не только текст */
-  text-decoration: none;
 }
