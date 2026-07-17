@@ -16,17 +16,29 @@ after = ["links"]
 extra-watch-dirs = ["po"]
 
 [output.html]
-git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography.book"
+# additional-css = ["theme/css/language-picker.css"]
+git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography"
+
+[output.html.search]
+enable = true
+use-boolean-and = true
+
+[output.html.fold]
+enable = true
+level = 2
 
 # DOCX
 [output.pandoc.profile.docx]
 output-file = "output.docx"
+verbosity = "DEBUG"
 
 # LATEX
 [output.pandoc.profile.latex]
+# extract-media = "media"
 output-file = "output.tex"
 
 [output.pandoc.profile.latex.variables]
+fontenc = "T2A"
 lang = "ru-RU"
 mainfont = "Liberation Serif"
 header-includes = [
