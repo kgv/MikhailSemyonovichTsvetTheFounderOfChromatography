@@ -28,5 +28,9 @@ git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOf
 enable = true
 use-boolean-and = true
 
+[output.html.fold]
+enable = true
+level = 2
+
 # PDF
 [output.pdf]
