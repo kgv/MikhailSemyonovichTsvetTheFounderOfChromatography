@@ -112,6 +112,12 @@ tlmgr texlive-lang-cyrillic texlive-lang-russian
 tlmgr install babel-russian hyphen-russian cyrillic
 ```
 
+### Latex
+
+`\section*{Сноски}`
+`\usepackage{endnotes}`
+`\footnote{` => `\endnote{`
+
 Преобразуй в markdown как у меня теперь
 "Оценки первых шагов хроматографии: Дискуссия с Л.Махлевским. М.С.Цвет и Р.Вилыптеттер о хлорофилле и хроматографии"
 с 289 по 325
