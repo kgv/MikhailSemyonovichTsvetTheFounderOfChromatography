@@ -36,8 +36,8 @@ level = 2
 math = true # parse inline ($a^b$) and display ($$a^b$$) math
 
 # DOCX
-[output.pandoc.profile.docx]
-output-file = "output.docx"
+# [output.pandoc.profile.docx]
+# output-file = "output.docx"
 
 # LATEX
 [output.pandoc.profile.latex]
