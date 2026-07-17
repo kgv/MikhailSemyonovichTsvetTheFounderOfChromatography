@@ -1,0 +1,32 @@
+[book]
+title = "Mikhail Semyonovich Tsvet the founder of chromatography"
+authors = [
+    "Evgenia Mikhailovna Senchenkova (Author)",
+    "Giorgi Vladimirovich Kazakov (Editor)",
+    "Roman Alexandrovich Sidorov (Editor)",
+]
+description = "Mikhail Semyonovich Tsvet the founder of chromatography"
+language = "ru"
+
+[preprocessor.katex]
+after = ["links"]
+before = ["gettext"]
+renderers = ["epub", "html", "pdf"]
+
+[preprocessor.gettext]
+optional = true
+after = ["links"]
+
+[build]
+extra-watch-dirs = ["po"]
+
+[output.html]
+additional-css = ["theme/css/language-picker.css"]
+git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography"
+
+[output.html.search]
+enable = true
+use-boolean-and = true
+
+# PDF
+[output.pdf]

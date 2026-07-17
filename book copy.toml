@@ -6,12 +6,7 @@ authors = [
     "Roman Alexandrovich Sidorov (Editor)",
 ]
 description = "Mikhail Semyonovich Tsvet the founder of chromatography"
-# language = "ru"
-
-[preprocessor.katex]
-after = ["links"]
-before = ["gettext"]
-renderers = ["epub", "html", "pdf"]
+language = "ru"
 
 [preprocessor.gettext]
 optional = true
@@ -22,7 +17,7 @@ extra-watch-dirs = ["po"]
 
 [output.html]
 additional-css = ["theme/css/language-picker.css"]
-git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography"
+git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography/"
 
 [output.html.search]
 enable = true
@@ -32,16 +27,17 @@ use-boolean-and = true
 enable = true
 level = 2
 
-[output.pandoc]
+# EPUB
+# [output.epub]
+
+# PDF
+# [output.pdf]
+
+# [output.pandoc]
 
 # DOCX
-[output.pandoc.profile.docx]
-output-file = "output.docx"
-verbosity = "DEBUG"
-
-# [output.pandoc.profile.pdf]
-# output-file = "comprehensive-rust.pdf"
-# pdf-engine = "lualatex"
+# [output.pandoc.profile.docx]
+# output-file = "output.docx"
 
 # LATEX
 # [output.pandoc.profile.latex]
