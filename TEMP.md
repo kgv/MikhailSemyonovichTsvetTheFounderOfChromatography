@@ -15,3 +15,8 @@ $\ce{COOCH3}$
 $\ce{COOC20H39}$
 $\ce{C55H72O5N4Mg}$
 $\ce{C55H70O6N4Mg}$
+
+($\ce{C30H39N2J}$),
+($\ce{C15H14O4}$),
+($\ce{O2}$,
+$\ce{CO2}$),
