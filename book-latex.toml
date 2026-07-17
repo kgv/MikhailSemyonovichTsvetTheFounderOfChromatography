@@ -32,9 +32,12 @@ use-boolean-and = true
 enable = true
 level = 2
 
+[output.pandoc.markdown.extensions] # enable additional Markdown extensions
+math = true # parse inline ($a^b$) and display ($$a^b$$) math
+
 # DOCX
-[output.pandoc.profile.docx]
-output-file = "output.docx"
+# [output.pandoc.profile.docx]
+# output-file = "output.docx"
 
 # LATEX
 [output.pandoc.profile.latex]
@@ -50,6 +53,7 @@ header-includes = [
     "\\usepackage{alphabeta}",
     "\\usepackage{grffile}", # Точки в именах файлов
     "\\graphicspath{{../../../}}", # Исправление путей
+    "\\usepackage[version=4]{mhchem}", # Химические формулы
     "\\usepackage{lineno}", # Номера строк
     "\\linenumbers",
     "\\usepackage{draftwatermark}", # Водяной знак
