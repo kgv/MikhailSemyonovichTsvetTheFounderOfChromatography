@@ -118,6 +118,8 @@ tlmgr install babel-russian hyphen-russian cyrillic
 `\usepackage{endnotes}`
 `\footnote{` => `\endnote{`
 
+`\S+[₀-₉]+\S*`
+
 Преобразуй в markdown как у меня теперь
 "Оценки первых шагов хроматографии: Дискуссия с Л.Махлевским. М.С.Цвет и Р.Вилыптеттер о хлорофилле и хроматографии"
 с 289 по 325
