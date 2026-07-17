@@ -8,6 +8,13 @@ authors = [
 description = "Mikhail Semyonovich Tsvet the founder of chromatography"
 language = "ru"
 
+[preprocessor.gettext]
+optional = true
+after = ["links"]
+
+[build]
+extra-watch-dirs = ["po"]
+
 [output.html]
 additional-css = ["theme/css/language-picker.css"]
 git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOfChromatography/"
@@ -16,12 +23,9 @@ git-repository-url = "https://github.com/kgv/MikhailSemyonovichTsvetTheFounderOf
 enable = true
 use-boolean-and = true
 
-[build]
-extra-watch-dirs = ["po"]
-
-[preprocessor.gettext]
-optional = true
-after = ["links"]
+[output.html.fold]
+enable = true
+level = 2
 
 # EPUB
 # [output.epub]
